@@ -1,0 +1,223 @@
+@font-face
+  font-family: "Flama Condensed Basic"
+  src: url("WOFF/FlamaCondensed-Basic.woff") format("woff")
+  font-weight: 400
+
+
+@font-face
+  font-family: "Flama Condensed Medium"
+  src: url("WOFF/FlamaCondensed-Medium.woff") format("woff")
+  font-weight: 500
+
+
+@font-face
+  font-family: "Gotham Narrow"
+  src: url("WOFF/GothamNarrow-Book.woff") format("woff")
+  font-weight: 400
+
+
+html, body
+  color: white
+  background: black
+  width: 100%
+  height: 100%
+  margin: 0
+  padding: 0
+  font-family: "Gotham Narrow", sans-serif
+
+*
+  box-sizing: border-box
+  position: relative
+  outline: none
+  -webkit-tap-highlight-color: transparent !important
+  -webkit-touch-callout: none !important
+  -webkit-user-select: none !important
+  -khtml-user-select: none !important
+  -moz-user-select: none !important
+  -ms-user-select: none !important
+  user-select: none !important
+  -webkit-overflow-scrolling: touch
+
+::-webkit-scrollbar
+  display: none
+
+.mobile-container
+  margin: auto
+  overflow: scroll
+  max-height: 100%
+  width: 100%
+  max-width: calc(100vh * (9/16))
+  .swiper-container
+    &.content
+      padding-top: 30px
+      max-height: 100vh
+      .swiper-wrapper .swiper-slide
+        width: 100%
+        max-height: calc(100vh - #tab-height)
+        overflow-y: hidden
+        &.hamburger-menu
+          height: 100%
+          min-height: calc(100vh - 30px)
+          display: flex
+          flex-direction: column
+          justify-content: space-between
+          text-align: right
+          padding: 3rem 3rem 3rem 0
+          max-width: calc(100% - 4rem)
+          margin-right: 4rem
+          transition: margin 400ms
+          will-change: margin
+          &.swiper-slide-active
+            margin-right: 0
+            .menu-button
+              letter-spacing: 0.025em
+          .menu-button
+            color: #E60B6E
+            text-transform: uppercase
+            letter-spacing: 0.3em
+            transition: letter-spacing 400ms ease-out
+            will-change: letter-spacing
+            font-family: "Flama Condensed Basic", "Roboto Condensed", "Open Sans Condensed", sans-serif
+            font-size: 2rem
+            + .menu-button
+              margin-top: 1.2rem
+        &.headlines .head
+          height: calc(16rem + 3.5rem)
+          .headline
+            max-height: calc(7.4em - 1em)
+          .image
+            height: calc(16rem - 2em)
+        &.snippet .story
+          padding-bottom: 4rem
+          .headline
+            max-height: 7.4em
+          .image
+            height: 16rem
+        &.full-story .story
+          + .story
+            margin-top: calc(4rem - 3rem)
+          .headline
+            max-height: 7.4em
+          .image
+            height: 16rem
+        .scroll-container
+          width: 100%
+          height: 100%
+          max-height: calc(100vh - 30px)
+          overflow-y: scroll
+          padding-bottom: 1rem
+    &.tabs
+      position: fixed
+      max-width: calc(100vh * (9/16))
+      height: 30px
+      width: 100%
+      text-align: center
+      text-transform: uppercase
+      color: #E60B6E
+      background: black
+      z-index: 1000
+      letter-spacing: 0.025em
+      font-size: 1rem
+      font-family: "Flama Condensed Medium", "Roboto Condensed", "Open Sans Condensed", sans-serif
+      font-weight: 500
+      .swiper-wrapper
+        width: 100%
+        .swiper-slide
+          width: 47%
+          display: flex
+          align-items: center
+          justify-content: center
+
+.story
+  height: 100%
+  .head
+    height: calc(16rem + 5.5rem)
+    .headline
+      font-family: "Flama Condensed Medium", "Roboto Condensed", "Open Sans Condensed", sans-serif
+      display: block
+      line-height: 100%
+      overflow-y: hidden
+      padding: 1rem 4rem 4rem 1rem
+      font-size: 2.6rem
+      font-weight: 500
+    .image
+      position: absolute
+      top: 0
+      right: 0
+      margin: 3rem 0 0 3.5rem
+      width: calc(100% - 3.5rem)
+      overflow: hidden
+      opacity: 0.65
+      z-index: -1
+      background-size: cover
+      background-position: center
+    .meta
+      font-family: "Flama Condensed Basic", "Roboto Condensed", "Open Sans Condensed", sans-serif
+      position: absolute
+      bottom: 0
+      margin: 0.5em 0 0.5em 3.5rem
+      color: #E60B6E
+      text-transform: uppercase
+      letter-spacing: 0.025em
+      font-weight: 400
+      .bullet
+        color: white
+  .snippet-content, .full-sory-content
+    margin-left: 3.5rem
+    margin-right: 1rem
+  .snippet-content .author, .full-sory-content .author
+    font-family: "Flama Condensed Basic", "Roboto Condensed", "Open Sans Condensed", sans-serif
+    color: #E60B6E
+    text-align: right
+    margin-bottom: 0.2em
+    letter-spacing: 0.025em
+    font-weight: 400
+  .snippet-content .copy, .full-sory-content .copy
+    color: #FAFAFA
+    line-height: 160%
+    -webkit-hyphens: auto
+    -moz-hyphens: auto
+    -ms-hyphens: auto
+    hyphens: auto
+    font-family: "Gotham Narrow"
+    font-weight: 400
+  .snippet-content .copy + .copy, .full-sory-content .copy + .copy
+    margin-top: 0.8em
+  .snippet-content .continue-reading, .full-sory-content .continue-reading
+    margin-top: 0.5rem
+    text-align: right
+    color: #E60B6E
+    padding: 0.45em 0 0.35em 1em
+    background: none
+    border: none
+    text-transform: uppercase
+    float: right
+    letter-spacing: 0.025em
+    font-family: "Flama Condensed Basic", "Roboto Condensed", "Open Sans Condensed", sans-serif
+    font-size: 1rem
+    font-weight: 400
+  .snippet-content .continue-reading::before, .full-sory-content .continue-reading::before
+    content: ""
+    position: absolute
+    display: block
+    left: 0
+    top: 0
+    height: 100%
+    background: #E60B6E
+    width: 0.1em
+    transform: skewx(-15deg)
+
+.light-copy
+  .snippet-content, .full-sory-content
+    background: white
+    margin-top: 0.3rem
+    margin-right: 0
+    padding-right: 1rem
+    padding-top: 2rem
+    margin-left: 0
+    padding-left: 3.5rem
+    padding-bottom: 3.5rem
+  .snippet-content .copy, .full-sory-content .copy
+    color: black !important
+
+/*# sourceMappingURL=fastnews.css.map

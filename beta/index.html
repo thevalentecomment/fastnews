@@ -1,0 +1,715 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+
+<title>Fast News</title>
+<link rel="stylesheet" href="fastnews.css">
+<meta charset=utf-8>
+<meta name="theme-color" content="#000000">
+<meta name="viewport" content="width=device-width">
+<link rel="icon" sizes="192x192" href="icon.png">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+
+<style>
+.swiper-button-next,
+.swiper-button-prev {
+  display: none;
+}
+</style>
+
+</head>
+
+<body>
+
+
+  <script>
+
+    stories = {
+
+        one: {headline: 'Milo Yiannopoulos’s Pedophilia Comments Cost Him CPAC Role and Book Deal',
+              image: 'milo.jpg',
+              publication: 'NYT',
+              age: '4 Days Ago',
+              author: 'By JEREMY W. PETERS',
+              snippet: ['WASHINGTON — Milo Yiannopoulos, a polemical Breitbart editor and unapologetic defender of the alt-right, tested the limits of how far his provocations could go after the publication of a video in which he condones sexual relations with boys as young as 13 and laughs off the seriousness of pedophilia by Roman Catholic priests.', 'On Monday, the organizers of the Conservative Political Action Conference rescinded their invitation for him to speak this week. Simon & Schuster said it was canceling publication of “Dangerous” after standing by him through weeks of criticism of the deal. And Breitbart…'],
+              full_story: ['WASHINGTON — Milo Yiannopoulos, a polemical Breitbart editor and unapologetic defender of the alt-right, tested the limits of how far his provocations could go after the publication of a video in which he condones sexual relations with boys as young as 13 and laughs off the seriousness of pedophilia by Roman Catholic priests.', 'On Monday, the organizers of the Conservative Political Action Conference rescinded their invitation for him to speak this week. Simon & Schuster said it was canceling publication of “Dangerous” after standing by him through weeks of criticism of the deal. And Breitbart itself was reportedly reconsidering his role amid calls online for it to sever ties with him.',
+              'Mr. Yiannopoulos’s comments, which quickly created an uproar online over the weekend, put many conservatives in a deeply uncomfortable position. They have long defended Mr. Yiannopoulos’s attention-seeking stunts and racially charged antics on the grounds that the left had tried to hypocritically censor his right to free speech.', 'But endorsing pedophilia, it seemed, was more than they could tolerate. The board of the American Conservative Union, which includes veterans of the conservative movement like Grover Norquist and Morton Blackwell, made the decision to revoke Mr. Yiannopoulos’s speaking slot and condemn his comments on Monday.', '“We initially extended the invitation knowing that the free speech issue on college campuses is a battlefield where we need brave, conservative standard-bearers,” Matt Schlapp, the chairman of the American Conservative Union, said in a written statement.',
+              'Regarding Mr. Yiannopoulos’s comments, Mr. Schlapp called them “disturbing” and said Mr. Yiannopoulos’s explanation of them was insufficient.', 'Late Monday, Mr. Yiannopoulos said that he would hold a news conference on Tuesday to discuss his statements.', 'Mr. Yiannopoulos, who has railed against Muslims, immigrants, transgender people and women’s rights, is a marquee contributor to Breitbart News, where he serves as senior editor. He has amassed a fan base for his stunts and often-outrageous statements. But by Monday afternoon, his future at the website was being intensely debated by top management.',
+              'One Breitbart journalist, who requested anonymity to describe private deliberations, described divisions in the newsroom over whether Mr. Yiannopoulos could stay on. There was some consensus among staff members that his remarks were more extreme than his usual speech, the journalist said, and executives were discussing by telephone whether his apology was enough to preserve his position at the site.', 'A Breitbart representative declined to comment.', 'After the video was leaked on Twitter by a conservative group called the Reagan Battalion, Mr. Yiannopoulos denied that he had ever condoned child sexual abuse, noting that he was a victim himself. He blamed his “British sarcasm” and “deceptive editing” for leading to a misunderstanding.',
+              '“No, no, no. You’re misunderstanding what pedophilia means,” Mr. Yiannopoulos says on the tape, in which he is talking to radio hosts in a video chat. “Pedophilia is not a sexual attraction to somebody 13 years old who is sexually mature. Pedophilia is attraction to children who have not reached puberty,” he adds, dismissing the fact that 13-year-olds are children.', 'The notion of consent, he says, is “arbitrary and oppressive.”', 'At one point in the video, an unknown speaker says that the behavior being defended by Mr. Yiannopoulos is akin to molestation by Catholic priests. Mr. Yiannopoulos responds, in an ironic tone, by crediting a priest for having helped develop his sexual technique.',
+              'Conservatives reacted with near unanimous disgust at the comments. Some expressed bewilderment that conference organizers would extend an invitation to Mr. Yiannopoulos in the first place, given his history of statements that have been offensive to blacks and Muslims, and have generally pushed the bounds of decency. Twitter has banned him.', '“Colossal misjudgment,” Rich Lowry, editor of National Review, wrote on Twitter. “Now CPAC has put itself in the role of ‘censor.’ And for what? Some clicks and headlines?”', 'Until now, Mr. Yiannopoulos, a fervent supporter of President Trump, had emerged as something of a hero to many on the right, who saw in him an eager and willing combatant against a culture they believed was too politically correct. He became a star at Breitbart, the hard-right news outlet, and earned the admiration of Stephen K. Bannon, who was its publisher before becoming Mr. Trump’s chief White House strategist.',
+              'Mr. Yiannopoulos was just getting a foothold in the media. He recently appeared on the comedian Bill Maher’s HBO talk show, and aggressively taunted liberals without much pushback from the host. His book “Dangerous,” a free-speech manifesto and memoir that he sold in December to Threshold Editions, a conservative imprint within Simon & Schuster, had shot to the top of Amazon’s best-seller list, based on advance orders.', 'The publisher had encountered mounting criticism of its relationship with Mr. Yiannopoulos. The author Roxane Gay withdrew from her contract for a book with a Simon & Schuster imprint in protest.', 'The company stood by Mr. Yiannopoulos even as his planned lecture at the University of California, Berkeley, was canceled after rioting.', 'But in a terse statement late Monday, the publisher said it was canceling the book “after careful consideration.”',
+              'In a statement released through his agent, Mr. Yiannopoulos said: “The people whose views, concerns and fears I am articulating do not sip white wine and munch canapés in gilded salons. And they will not be defeated by the cocktail set running New York publishing. Nor will I.”', 'The decision is likely to be a costly one for Simon & Schuster, which may not be able to recover the portion of the reported $250,000 advance it had already paid to Mr. Yiannopoulos. “Dangerous” had sold just under 50,000 copies, according to his literary agent, Thomas Flannery Jr., who said he planned to find another publisher.',]},
+
+        two: {headline: 'Celebrating 20 years of The Philosopher’s Stone inside the mini-Hogwarts in New York City',
+              image: 'hogwarts.jpg',
+              publication: 'The Verge',
+              age: '20 Minutes ago',
+              author: 'By Sarah Bishop',
+              snippet: ['Harry Potter and the Philosopher’s Stone turned 20 years old on June 26th, 2017, and perhaps the most appropriate place to celebrate the first score of the Harry Potter franchise is in a library.', 'How to Pass Your O.W.L.s at Hogwarts: A Prep Course” is a curated collection of 40 images within The New York Academy of Medicine’s 33,000 rare book collection. (The organization’s main book catalog includes nearly 550,000 books.) The collection is available to view online, showcasing things like dragons from Ambroise Paré’s 1607 Les oeuvres d’Ambroise Paré: Sixieme Edition and the 1707 hieroglyphics attributed…'],
+              full_story: ['Harry Potter and the Philosopher’s Stone turned 20 years old on June 26th, 2017, and perhaps the most appropriate place to celebrate the first score of the Harry Potter franchise is in a library.',
+              'How to Pass Your O.W.L.s at Hogwarts: A Prep Course” is a curated collection of 40 images within The New York Academy of Medicine’s 33,000 rare book collection. (The organization’s main book catalog includes nearly 550,000 books.) The collection is available to view online, showcasing things like dragons from Ambroise Paré’s 1607 Les oeuvres d’Ambroise Paré: Sixieme Edition and the 1707 hieroglyphics attributed to Nicholas Flamel in the alchemical text, Medicina Practica, or the Practical Physician.',
+              'But, of course, electronics don’t function on Hogwarts’ campus (despite the many Hogwarts RPG characters strolling around with “charmed” CD players and cameras in internet-days-gone-by), and there’s only one student that comes to mind who would study in the early days of summer. So I disguised myself as Hermione Granger and went to visit NYAM’s rare books library.',
+              'The first thing to note is that the prep course covers five of the seven core subjects taught at Hogwarts, and two additional subjects: Herbology, Defense Against the Dark Arts, History of Magic, Potions, Transfiguration, Care of Magical Creatures, and Divination.',
+              'You’ll be greeted at the door by a softball-sized cow bezoar from 1862. The goat’s bezoar is a fine antidote to most poisons, as any first-year Potions student could tell you. In person, the churned hairs are so smoothed by the stomachs of the cow that it looks like an antiquated but fashionable clip-on bun.',
+              'Start, as J.K. Rowling did, with the Philosopher’s Stone. The books curated for the Transfiguration course focus largely on alchemical texts from the 17th and 18th centuries, and include hieroglyphics attributed three centuries post-mortem to Nicholas Flamel',
+              'The legend of Flamel’s alchemical ambitions began almost two full centuries after his death, when Livre des figures hiéroglyphiques (1612) was published under his name. According to the legend, the scribe traveled to Spain to translate a 21-page text he’d purchased and with no luck, began to return home. He happened upon a sage. The sage recognized the text as a key to alchemy, and so Flamel and his wife dedicated their lives to decrypting it, eventually developing a success Philosopher’s Stone and the Elixir of Life.',
+              'The Twelve Keys of Basil Valentine are compiled in Jean-Jacques Manget’s Bibliotheca Curiosa (1702), and display a rich set of images suitable for any Ancient Runes student. Rare books curator Anne Garner (a great deal more helpful than Madam Pince) pointed out that the roses in the final image indicate a successful completion, but other illustrations could likely only be translated with the insider knowledge of a secret society member.',
+              'The course selection for Care of Magical Creatures will feel familiar: in it are depictions of unicorns, dragons, phoenixes, three-headed dogs, and mermaids. Unicorn horns are foretold to have healing properties in Conrad Gesner’s 1563 Historia Animalium, although there’s no mention of drinking their blood. Curious.',
+              'More magical creatures appear in their appropriate sections: centaurs in a 1667 tome are under Divinations; a 1640’s basilisk appears in Defense Against the Dark Arts; and both male and female-presenting mandrakes are shown in the Herbology books. The books chosen for course study of History of Magic reveal some less fantastical tales: witch hunting.',
+              'Jean Bodin’s Demonomanie was originally published in France in 1580; the edition in the collection is from 1593. The book denounces sorcery, including the works of Cornelius Agrippa (have you gotten his card in your chocolate frogs yet?), and is considered the most influential manual on witch hunting in France in the 16th century. It sits next to della Porta’s Natural Magic (1658), which theorizes that women accused of witchcraft after claiming they could fly had only experienced hallucinogens while making herbal remedies. della Porta offers several of his own herbal remedies, including some mandrake to help one sleep, or a lot of mandrake to make one go crazy for a day. In the 17th century, Bodin referred to della Porta as a “Neapolitan sorcerer,” but today, their books are displayed side by side.',
+              'Fans won’t be surprised by the level of thoughtfulness and research that went into the mythos of the seven books’ literary world, but there may be no better way to appreciate the series than to uncover the work that created them, nestled in centuries-old volumes.']},
+
+      three: {headline: '‘Happiest Place’ sadly ponders Disneyland',
+              image: 'disneyland.jpg',
+              publication: 'The Washington Post',
+              age: 'Just Now',
+              author: 'By Nelson Pressley',
+              snippet: ['Some plays make you wait before paying off, and that’s the case with Philip Dawkins’s pokey “The Happiest Place on Earth.” It’s a solo show and a personal memoir — mostly thoughtful, sometimes funny — about family grief and coping at Disneyland. Dawkins acted it himself last year in Chicago.',
+              'The script is tweaked for the Hub Theatre’s production in Fairfax, where Tia Shearer winsomely plays Dawkins and asks us to go along with the switch. With her pixie haircut and warm, confidential air, Shearer has a Peter Pan quality that suits the understated gender-bending and the Disney milieu that’s always…'],
+              full_story: ['Some plays make you wait before paying off, and that’s the case with Philip Dawkins’s pokey “The Happiest Place on Earth.” It’s a solo show and a personal memoir — mostly thoughtful, sometimes funny — about family grief and coping at Disneyland. Dawkins acted it himself last year in Chicago.',
+              'The script is tweaked for the Hub Theatre’s production in Fairfax, where Tia Shearer winsomely plays Dawkins and asks us to go along with the switch. With her pixie haircut and warm, confidential air, Shearer has a Peter Pan quality that suits the understated gender-bending and the Disney milieu that’s always center stage. (A silhouette of Sleeping Beauty Castle occupies the back wall of Debra Kim Sivigny’s simple set.)',
+              'Personable as Shearer is, something seems to be lost in translation as “Philip” methodically walks us through his deep family history, marked by the on-air death in the 1950s of his grandfather during his nightly TV sportscast. A lot of the 100-minute show feels like digging through the old photos and family lore of someone you don’t know.',
+              'Gradually, the interesting part emerges: the contrast between such sudden, devastating loss and the chipper vision of Disneyland. Dawkins’s family first visited shortly after the complex opened in the 1950s, and the play smartly explores the troubled American history that immediately preceded Walt Disney’s Frontierland, Tomorrowland, Main Street, Adventureland and the rest. Borrowing themes and experiences from the “neighborhoods” helps give the play shape and heft.',
+              'The park also supplies quirky humor. Take Disneyland’s super-tidy euphemisms: What are staffers instructed to call it when a visitor throws up? A “protein spill.”',
+              'You can see how Dawkins might have made a cynical piece full of anger, but the strength of the even-keeled show lies in his canny, appreciative analysis of Disney. A small photo of Disney hangs on the wall — there’s nothing else on the set but a file cabinet of Philip’s family records — and he gets you thinking about the utopian goal of Disney’s park. You also reflect on how much grief there is in the big animated movies that have been so pivotal to American childhood. Lots of deceased parents in that canon.',
+              'Matt Bassett’s production in the Hub’s high-ceilinged black box is sharp and simple, with Patrick Lord’s projections adding a bit of history and a family slide-show feeling. Shearer is a genial host, a smooth talker as she winds through the complex family tree, and appealingly curious once Dawkins’s script finally finds a sharp edge.',
+              'The Happiest Place on Earth by Philip Dawkins. Directed by Matt Bassett. Costumes, Debra Kim Sivigny; lights, John D. Alexander; sound design, Reid May. About 100 minutes. Through July 30 at the Hub Theatre, 9431 Silver King Court, Fairfax. Tickets $22-$32. Visit thehubtheatre.org.']},
+
+       four: {headline: 'Some Airbnb hosts will face racial discrimination tests in California',
+              image: 'Airbnb.jpg',
+              publication: 'The Verge',
+              age: '1 Day Ago',
+              author: 'By Chris Welch ',
+              snippet: ['California regulators will soon be able to test select Airbnb hosts to determine whether they’re discriminating against users of the app based on race, according to The Guardian. The state’s Department of Fair Employment and Housing announced a first-of-its-kind agreement with Airbnb yesterday, which will apply fair housing testing — something that traditional housing providers (landlords) have long faced — to the home-sharing service.', 'Airbnb has for years grappled with claims of racial discrimination from users who’ve had bookings cancelled or worse. In late 2015, Harvard University researchers… '],
+              full_story: ['California regulators will soon be able to test select Airbnb hosts to determine whether they’re discriminating against users of the app based on race, according to The Guardian. The state’s Department of Fair Employment and Housing announced a first-of-its-kind agreement with Airbnb yesterday, which will apply fair housing testing — something that traditional housing providers (landlords) have long faced — to the home-sharing service.',
+              'Airbnb has for years grappled with claims of racial discrimination from users who’ve had bookings cancelled or worse. In late 2015, Harvard University researchers found that guests with African American-sounding names had a more difficult time renting rooms through the popular app.',
+              'Last September, Airbnb published a report outlining steps it would take to combat bias on the platform. “We have been slow to address these problems, and for this I am sorry,” CEO Brian Chesky wrote in a message that accompanied the 32-page document. Among the measures was a new “Community Commitment” (instituted in November) that requires hosts to certify that they won’t discriminate against renters. Airbnb’s terms of service effectively prevent major litigation against the company over these issues.',
+              'But a good-faith pledge wasn’t enough for California officials. Now, the state will be permitted to conduct fair housings tests on hosts with three ore more listings who have received discrimination complaints. Testers will be able to create accounts posing as potential renters “in order to gather information about whether a host is complying with fair housing laws.”',
+              'However, most of California’s Airbnb hosts will never be tested; approximately 6,000 of Airbnb’s 76,000 hosts in California meet the “three or more listings” requirement, The Guardian’s report says. Airbnb has also pledged to continue ongoing efforts to train employees, hosts, and guests on identifying and combatting bias and discrimination across the platform, and it will make it easier for users to file discrimination complaints — both with the company and with the DFEH.']},
+
+       five: {headline: 'Placeholder',
+              image: 'something.jpg',
+              publication: 'Placeholder',
+              age: 'Placeholder',
+              author: 'Placeholder',
+              snippet: ['Placeholder'],
+              full_story: ['Placeholder']}
+
+    }
+
+    function write(i) {
+      return document.write(i)
+    }
+
+    function select(i) {
+      return document.querySelector(i)
+    }
+
+  </script>
+
+
+	<div class="mobile-container">
+
+		<div class="swiper-container tabs">
+			<div class="swiper-wrapper">
+        <div class="swiper-slide">•</div> <!-- menu -->
+				<div class="swiper-slide">Headlines</div>
+				<div class="swiper-slide">Snippet</div>
+				<div class="swiper-slide">Full Story</div>
+			</div>
+		</div>
+
+		<div class="swiper-container content">
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+			<div class="swiper-wrapper">
+
+        <div class="swiper-slide hamburger-menu">
+          <div class="top">
+            <div class="menu-button">Account</div>
+          </div>
+          <div class="bottom">
+            <div class="menu-button">Politics</div>
+            <div class="menu-button">Business</div>
+            <div class="menu-button">World</div>
+            <div class="menu-button">Technology</div>
+          </div>
+        </div>
+
+				<div class="swiper-slide headlines">
+          <div class="scroll-container">
+
+            <!-- STORY 1 -->
+            <div class="story" id="story1-headline">
+  						<div class="head">
+  							<div class="headline">
+                  <script>write(stories.one.headline)</script>
+                </div>
+                <script>
+                  write('<div class="image" style="background-image:url(')
+                  write(stories.one.image)
+                  write(')"></div>')
+                </script>
+  							<div class="meta">
+                  <script>write(stories.one.publication)</script>
+                  <span class="bullet">·</span>
+                  <script>write(stories.one.age)</script>
+                </div>
+  						</div>
+  					</div>
+
+            <!-- STORY 2 -->
+            <div class="story" id="story2-headline">
+  						<div class="head">
+  							<div class="headline">
+                  <script>write(stories.two.headline)</script>
+                </div>
+                <script>
+                  write('<div class="image" style="background-image:url(')
+                  write(stories.two.image)
+                  write(')"></div>')
+                </script>
+  							<div class="meta">
+                  <script>write(stories.two.publication)</script>
+                  <span class="bullet">·</span>
+                  <script>write(stories.two.age)</script>
+                </div>
+  						</div>
+  					</div>
+
+            <!-- STORY 3 -->
+            <div class="story" id="story3-headline">
+  						<div class="head">
+  							<div class="headline">
+                  <script>write(stories.three.headline)</script>
+                </div>
+                <script>
+                  write('<div class="image" style="background-image:url(')
+                  write(stories.three.image)
+                  write(')"></div>')
+                </script>
+  							<div class="meta">
+                  <script>write(stories.three.publication)</script>
+                  <span class="bullet">·</span>
+                  <script>write(stories.three.age)</script>
+                </div>
+  						</div>
+  					</div>
+
+            <!-- STORY 4 -->
+            <div class="story" id="story4-headline">
+  						<div class="head">
+  							<div class="headline">
+                  <script>write(stories.four.headline)</script>
+                </div>
+                <script>
+                  write('<div class="image" style="background-image:url(')
+                  write(stories.four.image)
+                  write(')"></div>')
+                </script>
+  							<div class="meta">
+                  <script>write(stories.four.publication)</script>
+                  <span class="bullet">·</span>
+                  <script>write(stories.four.age)</script>
+                </div>
+  						</div>
+  					</div>
+
+            <!-- STORY 5 -->
+            <div class="story" id="story5-headline">
+  						<div class="head">
+  							<div class="headline">
+                  <script>write(stories.five.headline)</script>
+                </div>
+                <script>
+                  write('<div class="image" style="background-image:url(')
+                  write(stories.five.image)
+                  write(')"></div>')
+                </script>
+  							<div class="meta">
+                  <script>write(stories.five.publication)</script>
+                  <span class="bullet">·</span>
+                  <script>write(stories.five.age)</script>
+                </div>
+  						</div>
+  					</div>
+
+          </div>
+				</div>
+
+				<div class="swiper-slide snippet">
+          <div class="scroll-container">
+
+            <!-- STORY 1 -->
+  					<div class="story" id="story1-snippet">
+  						<div class="head">
+  							<div class="headline">
+                  <script>write(stories.one.headline)</script>
+                </div>
+                <script>
+                  write('<div class="image" style="background-image:url(')
+                  write(stories.one.image)
+                  write(')"></div>')
+                </script>
+  							<div class="meta">
+                  <script>write(stories.one.publication)</script>
+                  <span class="bullet">·</span>
+                  <script>write(stories.one.age)</script>
+                </div>
+  						</div>
+  						<div class="snippet-content">
+  							<div class="author">
+                  <script>write(stories.one.author)</script>
+                </div>
+                <script>
+                  for(var i = 0; i < stories.one.snippet.length; i++) {
+                    write('<div class="copy">')
+                    write(stories.one.snippet[i])
+                    write('</div>')
+                  }
+                </script>
+  							<button class="continue-reading">Continue reading</button>
+  						</div>
+  					</div>
+
+            <!-- STORY 2 -->
+            <div class="story" id="story2-snippet">
+  						<div class="head">
+  							<div class="headline">
+                  <script>write(stories.two.headline)</script>
+                </div>
+                <script>
+                  write('<div class="image" style="background-image:url(')
+                  write(stories.two.image)
+                  write(')"></div>')
+                </script>
+  							<div class="meta">
+                  <script>write(stories.two.publication)</script>
+                  <span class="bullet">·</span>
+                  <script>write(stories.two.age)</script>
+                </div>
+  						</div>
+  						<div class="snippet-content">
+  							<div class="author">
+                  <script>write(stories.two.author)</script>
+                </div>
+                <script>
+                  for(var i = 0; i < stories.two.snippet.length; i++) {
+                    write('<div class="copy">')
+                    write(stories.two.snippet[i])
+                    write('</div>')
+                  }
+                </script>
+  							<button class="continue-reading">Continue reading</button>
+  						</div>
+  					</div>
+
+            <!-- STORY 3 -->
+            <div class="story" id="story3-snippet">
+  						<div class="head">
+  							<div class="headline">
+                  <script>write(stories.three.headline)</script>
+                </div>
+                <script>
+                  write('<div class="image" style="background-image:url(')
+                  write(stories.three.image)
+                  write(')"></div>')
+                </script>
+  							<div class="meta">
+                  <script>write(stories.three.publication)</script>
+                  <span class="bullet">·</span>
+                  <script>write(stories.three.age)</script>
+                </div>
+  						</div>
+  						<div class="snippet-content">
+  							<div class="author">
+                  <script>write(stories.three.author)</script>
+                </div>
+                <script>
+                  for(var i = 0; i < stories.three.snippet.length; i++) {
+                    write('<div class="copy">')
+                    write(stories.three.snippet[i])
+                    write('</div>')
+                  }
+                </script>
+  							<button class="continue-reading">Continue reading</button>
+  						</div>
+  					</div>
+
+            <!-- STORY 4 -->
+            <div class="story" id="story4-snippet">
+  						<div class="head">
+  							<div class="headline">
+                  <script>write(stories.four.headline)</script>
+                </div>
+                <script>
+                  write('<div class="image" style="background-image:url(')
+                  write(stories.four.image)
+                  write(')"></div>')
+                </script>
+  							<div class="meta">
+                  <script>write(stories.four.publication)</script>
+                  <span class="bullet">·</span>
+                  <script>write(stories.four.age)</script>
+                </div>
+  						</div>
+  						<div class="snippet-content">
+  							<div class="author">
+                  <script>write(stories.four.author)</script>
+                </div>
+                <script>
+                  for(var i = 0; i < stories.four.snippet.length; i++) {
+                    write('<div class="copy">')
+                    write(stories.four.snippet[i])
+                    write('</div>')
+                  }
+                </script>
+  							<button class="continue-reading">Continue reading</button>
+  						</div>
+  					</div>
+
+            <!-- STORY 5 -->
+            <div class="story" id="story5-snippet">
+  						<div class="head">
+  							<div class="headline">
+                  <script>write(stories.five.headline)</script>
+                </div>
+                <script>
+                  write('<div class="image" style="background-image:url(')
+                  write(stories.five.image)
+                  write(')"></div>')
+                </script>
+  							<div class="meta">
+                  <script>write(stories.five.publication)</script>
+                  <span class="bullet">·</span>
+                  <script>write(stories.five.age)</script>
+                </div>
+  						</div>
+  						<div class="snippet-content">
+  							<div class="author">
+                  <script>write(stories.five.author)</script>
+                </div>
+                <script>
+                  for(var i = 0; i < stories.five.snippet.length; i++) {
+                    write('<div class="copy">')
+                    write(stories.five.snippet[i])
+                    write('</div>')
+                  }
+                </script>
+  							<button class="continue-reading">Continue reading</button>
+  						</div>
+  					</div>
+
+          </div>
+				</div>
+
+				<div class="swiper-slide full-story">
+          <div class="scroll-container">
+
+            <!-- STORY 1 -->
+  					<div class="story" id="story1-full-story">
+  						<div class="head">
+  							<div class="headline">
+                  <script>write(stories.one.headline)</script>
+                </div>
+                <script>
+                  write('<div class="image" style="background-image:url(')
+                  write(stories.one.image)
+                  write(')"></div>')
+                </script>
+                <div class="meta">
+                  <script>write(stories.one.publication)</script>
+                  <span class="bullet">·</span>
+                  <script>write(stories.one.age)</script>
+                </div>
+  						</div>
+              <div class="full-sory-content">
+                <div class="author">
+                  <script>write(stories.one.author)</script>
+                </div>
+                <script>
+                  for(var i = 0; i < stories.one.full_story.length; i++) {
+                    write('<div class="copy">')
+                    write(stories.one.full_story[i])
+                    write('</div>')
+                  }
+                </script>
+              </div>
+            </div>
+
+            <!-- STORY 2 -->
+            <div class="story" id="story2-full-story">
+  						<div class="head">
+  							<div class="headline">
+                  <script>write(stories.two.headline)</script>
+                </div>
+                <script>
+                  write('<div class="image" style="background-image:url(')
+                  write(stories.two.image)
+                  write(')"></div>')
+                </script>
+                <div class="meta">
+                  <script>write(stories.two.publication)</script>
+                  <span class="bullet">·</span>
+                  <script>write(stories.two.age)</script>
+                </div>
+  						</div>
+              <div class="full-sory-content">
+                <div class="author">
+                  <script>write(stories.two.author)</script>
+                </div>
+                <script>
+                  for(var i = 0; i < stories.two.full_story.length; i++) {
+                    write('<div class="copy">')
+                    write(stories.two.full_story[i])
+                    write('</div>')
+                  }
+                </script>
+              </div>
+            </div>
+
+            <!-- STORY 3 -->
+            <div class="story" id="story3-full-story">
+  						<div class="head">
+  							<div class="headline">
+                  <script>write(stories.three.headline)</script>
+                </div>
+                <script>
+                  write('<div class="image" style="background-image:url(')
+                  write(stories.three.image)
+                  write(')"></div>')
+                </script>
+                <div class="meta">
+                  <script>write(stories.three.publication)</script>
+                  <span class="bullet">·</span>
+                  <script>write(stories.three.age)</script>
+                </div>
+  						</div>
+              <div class="full-sory-content">
+                <div class="author">
+                  <script>write(stories.three.author)</script>
+                </div>
+                <script>
+                  for(var i = 0; i < stories.three.full_story.length; i++) {
+                    write('<div class="copy">')
+                    write(stories.three.full_story[i])
+                    write('</div>')
+                  }
+                </script>
+              </div>
+            </div>
+
+            <!-- STORY 4 -->
+            <div class="story" id="story4-full-story">
+  						<div class="head">
+  							<div class="headline">
+                  <script>write(stories.four.headline)</script>
+                </div>
+                <script>
+                  write('<div class="image" style="background-image:url(')
+                  write(stories.four.image)
+                  write(')"></div>')
+                </script>
+                <div class="meta">
+                  <script>write(stories.four.publication)</script>
+                  <span class="bullet">·</span>
+                  <script>write(stories.four.age)</script>
+                </div>
+  						</div>
+              <div class="full-sory-content">
+                <div class="author">
+                  <script>write(stories.four.author)</script>
+                </div>
+                <script>
+                  for(var i = 0; i < stories.four.full_story.length; i++) {
+                    write('<div class="copy">')
+                    write(stories.four.full_story[i])
+                    write('</div>')
+                  }
+                </script>
+              </div>
+            </div>
+
+            <!-- STORY 5 -->
+            <div class="story" id="story5-full-story">
+  						<div class="head">
+  							<div class="headline">
+                  <script>write(stories.five.headline)</script>
+                </div>
+                <script>
+                  write('<div class="image" style="background-image:url(')
+                  write(stories.five.image)
+                  write(')"></div>')
+                </script>
+                <div class="meta">
+                  <script>write(stories.five.publication)</script>
+                  <span class="bullet">·</span>
+                  <script>write(stories.five.age)</script>
+                </div>
+  						</div>
+              <div class="full-sory-content">
+                <div class="author">
+                  <script>write(stories.five.author)</script>
+                </div>
+                <script>
+                  for(var i = 0; i < stories.five.full_story.length; i++) {
+                    write('<div class="copy">')
+                    write(stories.five.full_story[i])
+                    write('</div>')
+                  }
+                </script>
+              </div>
+            </div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+  </div>
+
+<script>
+
+	var content = new Swiper('.content', {
+    initialSlide: 1,
+    grabCursor: true,
+    keyboardControl: true,
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+  })
+
+	var tabs = new Swiper('.tabs', {
+    initialSlide: 1,
+  	slidesPerView: 'auto',
+  	centeredSlides: true
+	})
+
+	content.params.control = tabs
+	tabs.params.control = content
+
+
+
+  // SNIPPETS
+  story1_snippet = select('#story1-snippet').getBoundingClientRect().top
+  story2_snippet = select('#story2-snippet').getBoundingClientRect().top
+  story3_snippet = select('#story3-snippet').getBoundingClientRect().top
+  story4_snippet = select('#story4-snippet').getBoundingClientRect().top
+  story5_snippet = select('#story5-snippet').getBoundingClientRect().top
+
+
+  select('#story1-headline').addEventListener('click', function() {
+    select('.snippet .scroll-container').scrollTop = story1_snippet - 30
+    nav()
+  })
+  select('#story2-headline').addEventListener('click', function() {
+    select('.snippet .scroll-container').scrollTop = story2_snippet - 30
+    nav()
+  })
+  select('#story3-headline').addEventListener('click', function() {
+    select('.snippet .scroll-container').scrollTop = story3_snippet - 30
+    nav()
+  })
+  select('#story4-headline').addEventListener('click', function() {
+    select('.snippet .scroll-container').scrollTop = story4_snippet - 30
+    nav()
+  })
+  select('#story5-headline').addEventListener('click', function() {
+    select('.snippet .scroll-container').scrollTop = story5_snippet - 30
+    nav()
+  })
+
+
+  // FULL STORIES
+  story1_full_story = select('#story1-full-story').getBoundingClientRect().top
+  story2_full_story = select('#story2-full-story').getBoundingClientRect().top
+  story3_full_story = select('#story3-full-story').getBoundingClientRect().top
+  story4_full_story = select('#story4-full-story').getBoundingClientRect().top
+  story5_full_story = select('#story5-full-story').getBoundingClientRect().top
+
+  select('#story1-snippet .continue-reading').addEventListener('click', function() {
+    select('.full-story .scroll-container').scrollTop = story1_full_story - 30
+    nav()
+  })
+  select('#story2-snippet .continue-reading').addEventListener('click', function() {
+    select('.full-story .scroll-container').scrollTop = story2_full_story - 30
+    nav()
+  })
+  select('#story3-snippet .continue-reading').addEventListener('click', function() {
+    select('.full-story .scroll-container').scrollTop = story3_full_story - 30
+    nav()
+  })
+  select('#story4-snippet .continue-reading').addEventListener('click', function() {
+    select('.full-story .scroll-container').scrollTop = story4_full_story - 30
+    nav()
+  })
+  select('#story5-snippet .continue-reading').addEventListener('click', function() {
+    select('.full-story .scroll-container').scrollTop = story5_full_story - 30
+    nav()
+  })
+
+  function nav() {
+    select('.swiper-button-next').click()
+  }
+
+
+  document.querySelector('.snippet .scroll-container').addEventListener('scroll', function(e) {
+
+    var distance = this.scrollTop
+    document.querySelector('#story1-snippet .headline').style.transform = 'translateY(-' + distance * 0.7 + 'px)'
+    document.querySelector('#story1-snippet .headline').style.opacity = 1 - (distance / 30)
+    document.querySelector('#story1-snippet .image').style.opacity = (distance / 20)
+
+    if (document.querySelector('#story1-snippet .image').style.opacity < 0.65) {
+      document.querySelector('#story1-snippet .image').style.opacity = 0.65
+    }
+
+    distance = distance - story2_snippet + 50
+    document.querySelector('#story2-snippet .headline').style.transform = 'translateY(-' + distance * 0.7 + 'px)'
+    document.querySelector('#story2-snippet .headline').style.opacity = 1 - (distance / 30)
+    document.querySelector('#story2-snippet .image').style.opacity = (distance / 20)
+
+    if (document.querySelector('#story2-snippet .image').style.opacity < 0.65) {
+      document.querySelector('#story2-snippet .image').style.opacity = 0.65
+    }
+  
+  })
+
+
+
+  document.querySelector('.full-story .scroll-container').addEventListener('scroll', function(e) {
+
+    var distance = this.scrollTop
+    document.querySelector('#story1-full-story .headline').style.transform = 'translateY(-' + distance * 0.7 + 'px)'
+    document.querySelector('#story1-full-story .headline').style.opacity = 1 - (distance / 30)
+    document.querySelector('#story1-full-story .image').style.opacity = (distance / 20)
+
+    if (document.querySelector('#story1-full-story .image').style.opacity < 0.65) {
+      document.querySelector('#story1-full-story .image').style.opacity = 0.65
+    }
+
+    distance = distance - story2_full_story + 50
+    document.querySelector('#story2-full-story .headline').style.transform = 'translateY(-' + distance * 0.7 + 'px)'
+    document.querySelector('#story2-full-story .headline').style.opacity = 1 - (distance / 30)
+    document.querySelector('#story2-full-story .image').style.opacity = (distance / 20)
+
+    if (document.querySelector('#story2-full-story .image').style.opacity < 0.65) {
+      document.querySelector('#story2-full-story .image').style.opacity = 0.65
+    }
+  
+  })
+
+  
+  
+
+</script>
+
+<noscript>
+</noscript>
+
+</body>
+</html>
